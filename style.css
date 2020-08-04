@@ -132,3 +132,31 @@ footer >h1{
         height: 150px;
     }
   }
+
+  @media (max-width: 435px) {
+    img{
+        width: 120px;
+        height: 120px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    img{
+        width: 100px;
+        height: 100px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    header {
+        height: 140px;
+    }
+    }
+  }
+
+  @media (max-width: 340px) {
+    img{
+        width: 70px;
+        height: 70px;
+    }
+  }
