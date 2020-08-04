@@ -18,7 +18,7 @@ function win(userChoice,comChoice){
     userScore++;
     userScore_span.innerHTML=userScore;
     comScore_span.innerHTML= comScore;
-    result_div.innerHTML=`${convert(userChoice)} beats ${convert(comChoice)}. You Win&#128293`;
+    result_div.innerHTML=`${convert(userChoice)} beats ${convert(comChoice)}.<br>You Win&#128293`;
     color=document.getElementById(userChoice);
     color.classList.add("green-glow");
     setTimeout(()=>color.classList.remove("green-glow"), 300);
@@ -28,7 +28,7 @@ function lost(userChoice,comChoice){
     comScore++;
     userScore_span.innerHTML=userScore;
     comScore_span.innerHTML= comScore;
-    result_div.innerHTML=`${convert(userChoice)} lost to ${convert(comChoice)}. You lost&#128557`;
+    result_div.innerHTML=`${convert(userChoice)} lost to ${convert(comChoice)}.<br>You lost&#128557`;
     color=document.getElementById(userChoice);
     color.classList.add("red-glow");
     setTimeout(()=>color.classList.remove("red-glow"), 300);
